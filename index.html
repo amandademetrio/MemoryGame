@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Memory Game</h1>
+        <div id="menu">
+            <div id="menuStars"></div>
+            <div id="menuTimer"></div>
+            <div id="menuMoves">
+                <span id="numberOfMoves"></span>
+                <span> moves</span>
+            </div>
+            <div id="menuReset">
+                <button type="button" id="resetButton">RESET</button>
+            </div>
+        </div>
+        <ul id="gameboard"></ul>
+        <!-- The Modal -->
+        <div id="victoryModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="textInsideModal"></p>
+                <p>Would you like to play again?</p>
+                <button id="playAgain">Yes</button>
+                <button id="notPlayAgain">No</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
